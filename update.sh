@@ -1,7 +1,7 @@
-if [ ! -d "/etc/nginx/conf.d/" ];then
+if [ -d "/etc/nginx/conf.d/" ];then
   cd /etc/nginx/conf.d/
 else
-  if [ ! -d "/www/server/panel/vhost/nginx/" ];then
+  if [ -d "/www/server/panel/vhost/nginx/" ];then
     cd /www/server/panel/vhost/nginx/
   else
     echo "You don't have installed nginx on the machine!"
