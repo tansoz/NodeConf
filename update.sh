@@ -11,6 +11,11 @@ fi
 
 
 rm -f ./proxy.conf
+
 wget "http://jp.cdn.rommhui.com/https/raw.githubusercontent.com/tansoz/NodeConf/master/proxy.conf"
 sed -i "s/listen 80;/listen $1;/g" ./proxy.conf
+
+$update=$(curl -s https://github.com/tansoz/NodeConf/commit/master | sed -n '/<code class="commit-sha">[a-z0-9]*<\/code>/p' | sed 's/<[^>]*>//g' | sed 's/^.*commit //g')
+sed -i "s/{{DATE}}/$update/g" ./proxy.conf
+
 nginx -s reload
