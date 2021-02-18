@@ -13,7 +13,8 @@ fi
 rm -f ./proxy.conf
 
 wget "http://jp.cdn.rommhui.com/https/raw.githubusercontent.com/tansoz/NodeConf/master/proxy.conf"
-sed -i "s/listen 80;/listen $1;/g" ./proxy.conf
+
+#sed -i "s/listen 80;/listen $1;/g" ./proxy.conf
 
 #update=$(wget -q -O - https://github.com/tansoz/NodeConf/commit/master | sed -n '/<code class="commit-sha">[a-z0-9]*<\/code>/p' | sed 's/<[^>]*>//g' | sed 's/^.*commit //g')
 update=$(md5sum -b proxy.conf | sed 's/^\([a-z0-9]\{7\}\).*$/\1/')
