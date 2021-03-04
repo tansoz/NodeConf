@@ -12,7 +12,9 @@ fi
 
 rm -f ./proxy.conf
 
-wget "http://jp.cdn.rommhui.com/https/raw.githubusercontent.com/tansoz/NodeConf/master/proxy.conf"
+id=$(wget -q -O - https://github.com/tansoz/NodeConf/commit/master | sed -n '/property="og:url".*commit\/\([a-z0-9]*\)"/p' | sed 's/.*commit\/\([0-9a-z]*\).*/\1/')
+
+wget "http://jp.cdn.rommhui.com/https/raw.githubusercontent.com/tansoz/NodeConf/${id}/proxy.conf"
 
 #sed -i "s/listen 80;/listen $1;/g" ./proxy.conf
 
