@@ -16,10 +16,10 @@ id=$(wget -q -O - https://github.com/tansoz/NodeConf/commit/master | sed -n '/pr
 
 wget "http://jp.cdn.rommhui.com/https/raw.githubusercontent.com/tansoz/NodeConf/${id}/proxy.conf"
 
-#sed -i "s/listen 80;/listen $1;/g" ./proxy.conf
+sed -i "s/listen 80;/listen $1;/g" ./proxy.conf
 
 #update=$(wget -q -O - https://github.com/tansoz/NodeConf/commit/master | sed -n '/<code class="commit-sha">[a-z0-9]*<\/code>/p' | sed 's/<[^>]*>//g' | sed 's/^.*commit //g')
-update=$(md5sum -b proxy.conf | sed 's/^\([a-z0-9]\{7\}\).*$/\1/')
-sed -i "s/{{DATE}}/$update/g" ./proxy.conf
+#update=$(echo $id | sed 's/^\([a-z0-9]\{7\}\).*$/\1/')
+sed -i "s/{{DATE}}/$id/g" ./proxy.conf
 
 nginx -s reload
