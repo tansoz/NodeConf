@@ -12,5 +12,5 @@ rm -f ./update.sh && wget "http://jp.cdn.rommhui.com/https/raw.githubusercontent
 ```
 ## 取消Default 配置占用80端口命令
 ```
-~~sed -i 's/80 default_server;/801 default_server;/g' /etc/nginx/sites-available/default~~
+sed -i 's/80 default_server;/801 default_server;/g' /etc/nginx/sites-available/default
 ```
