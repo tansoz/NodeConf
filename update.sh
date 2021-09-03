@@ -16,11 +16,11 @@ id=$(wget -q -O - http://jp.cdn.rommhui.com/https/github.com/tansoz/NodeConf/com
 
 wget "http://jp.cdn.rommhui.com/https/raw.githubusercontent.com/tansoz/NodeConf/${id}/proxy.conf"
 
-$listen=""
+listen=""
 
 for i in $*
 do
-	$listen="${listen}listen $i;";
+	listen="${listen}listen $i;";
 done
 
 sed -i "s/{{PORT}}/$listen/g" ./proxy.conf
