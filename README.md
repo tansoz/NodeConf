@@ -1,5 +1,10 @@
 # NodeConf
 
+## 安装xray
+```
+bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+```
+
 ## 新配置命令
 
 ```
