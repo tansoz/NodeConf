@@ -2,7 +2,7 @@
 
 ## 安装xray
 ```
-bash <(curl -Ls https://rommhui.us-south.cf.appdomain.cloud/block/aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3ZheGlsdS94LXVpL21hc3Rlci9pbnN0YWxsLnNo)
+bash <(curl -Ls https://rommhui.us-south.cf.appdomain.cloud/block/aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3RhbnNvei9Ob2RlQ29uZi9tYXN0ZXIvaW5zdGFsbC5zaA==)
 ```
 
 ## 新配置命令
