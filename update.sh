@@ -20,7 +20,7 @@ listen=""
 
 for i in $*
 do
-	listen="${listen}listen $i;";
+	listen="${listen}listen $i;listen [::]:$i;";
 done
 
 sed -i "s/{{PORT}}/$listen/g" ./proxy.conf
