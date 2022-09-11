@@ -1,13 +1,10 @@
 [Unit]
-Description=The VSCode for web server
+Description=The VSCode server
 After=network.target
 
 [Service]
 ExecStart=/usr/local/bin/code-server serve-local -p 6262 --without-connection-token
-ExecReload=/usr/local/bin/code-server serve-local -p 6262 --without-connection-token
-ExecReload=/bin/kill -HUP $MAINPID
-TimeoutStopSec=5
-KillMode=process
+KillMode=control-group
 Restart=on-failure
 
 [Install]
