@@ -7,7 +7,7 @@ apt-get -y install wget tar apache2-utils
 mkdir -p $ROOT
 cd $ROOT
 
-wget -O code-server.tar "https://update.code.visualstudio.com/1.71.2/server-linux-x64-web/stable"
+wget -O code-server.tar "https://update.code.visualstudio.com/latest/server-linux-x64-web/stable"
 tar -xvf code-server.tar
 rm -rf code-server.tar
 
