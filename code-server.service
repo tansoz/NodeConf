@@ -3,7 +3,7 @@ Description=The VSCode server
 After=network.target
 
 [Service]
-ExecStart=/usr/local/bin/code-server serve-local -p 6262 --without-connection-token
+ExecStart=/server/run-code-server.sh
 KillMode=control-group
 Restart=on-failure
 
