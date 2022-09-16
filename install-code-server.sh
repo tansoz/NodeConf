@@ -28,5 +28,7 @@ systemctl daemon-reload
 systemctl enable code-server.service
 systemctl start code-server.service
 
-touch ./code-server.user
-htpasswd ./code-server.user admin
+if ! [-f ./code-server.user ]; then
+  touch ./code-server.user
+  htpasswd ./code-server.user admin
+fi
