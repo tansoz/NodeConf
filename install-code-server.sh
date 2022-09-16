@@ -2,7 +2,7 @@
 
 ROOT=/server
 
-apt-get install -y wget tar
+apt-get -y install wget tar apache2-utils
 
 mkdir -p $ROOT
 cd $ROOT
@@ -27,3 +27,6 @@ mv code-server.service /etc/systemd/system/code-server.service
 systemctl daemon-reload
 systemctl enable code-server.service
 systemctl start code-server.service
+
+touch ./code-server.user
+htpasswd ./code-server.user admin
