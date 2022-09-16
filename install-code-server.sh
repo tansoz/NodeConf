@@ -24,6 +24,7 @@ curl https://purge.jsdelivr.net/gh/tansoz/NodeConf@master/code-server.code-serve
 wget https://cdn.jsdelivr.net/gh/tansoz/NodeConf@master/code-server.service
 
 mv code-server.service /etc/systemd/system/code-server.service
+systemctl enable code-server.service
 systemctl daemon-reload
 systemctl enable code-server.service
 systemctl start code-server.service
