@@ -17,6 +17,7 @@ mv ./vscode-server-linux-x64-web ./code-server
 mkdir -p ./code-server-data
 
 wget https://cdn.jsdelivr.net/gh/tansoz/NodeConf@master/run-code-server.sh
+chmod +x run-code-server.sh
 wget https://cdn.jsdelivr.net/gh/tansoz/NodeConf@master/code-server.service
 
 mv code-server.service /etc/systemd/system/code-server.service
