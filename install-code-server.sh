@@ -17,7 +17,7 @@ mv ./vscode-server-linux-x64-web ./code-server
 sed -i "s/-src 'self'/-src 'self' main.vscode-cdn.net/g" code-server/out/vs/server/node/server.main.js
 sed -i "s/\([^:,]*\),WORK/\1,MS_STATIC_CDN:\1.replace(\/^.([a-z]+)-([a-z0-9]+).+$\/,\"\/\/main.vscode-cdn.net\/\$1\/\$2\"),WORK/g" code-server/out/vs/server/node/server.main.js
 
-sed -i "s/{{WORKBENCH_WEB_BASE_URL}}\/out/{{MS_STATIC_CDN}}\/out/g" code-server/out/vs/code/browser/workbench/workbench.html
+sed -i "s/src=\"{{WORKBENCH_WEB_BASE_URL}}/src=\"{{MS_STATIC_CDN}}/g" code-server/out/vs/code/browser/workbench/workbench.html
 
 mkdir -p ./code-server-data
 
