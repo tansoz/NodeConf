@@ -14,6 +14,11 @@ rm -rf code-server.tar
 rm -rf ./code-server
 mv ./vscode-server-linux-x64-web ./code-server
 
+sed -i "s/script-src 'self'/script-src 'self' main.vscode-cdn.net/g" code-server/out/vs/server/node/server.main.js
+sed -i "s/this.__staticRoute,WORK/this.__staticRoute,MS_STATIC_CDN:this.__staticRoute.replace(\/^.([a-z]+)-([a-z0-9]+).+$\/,\"\/\/main.vscode-cdn.net\/$1\/$2\"),WORK/g" code-server/out/vs/server/node/server.main.js
+
+sed -i "s/{{WORKBENCH_WEB_BASE_URL}}\/out/{{MS_STATIC_CDN}}\/out/g" code-server/out/vs/code/browser/workbench/workbench.html
+
 mkdir -p ./code-server-data
 
 rm -f run-code-server.sh
