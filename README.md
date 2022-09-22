@@ -10,6 +10,11 @@ curl https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/maste
 bash <(curl -Ls https://rommhui.us-south.cf.appdomain.cloud/block/aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3RhbnNvei9Ob2RlQ29uZi9tYXN0ZXIvaW5zdGFsbC5zaA==)
 ```
 
+## 测速
+```
+curl -so- 86.re/bench.sh | bash
+```
+
 ## 新配置命令
 
 ```
