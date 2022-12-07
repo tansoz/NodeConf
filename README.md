@@ -18,12 +18,12 @@ curl -so- 86.re/bench.sh | bash
 ## 新配置命令
 
 ```
-rm -f ./update.sh && wget "http://jp.cdn.rommhui.com/https/raw.githubusercontent.com/tansoz/NodeConf/master/update.sh" && chmod +x update.sh && bash ./update.sh 80
+rm -f ./update.sh && wget "https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/master/update.sh" && chmod +x update.sh && bash ./update.sh 80
 ```
 
 ## 旧配置命令
 ```
-~~rm -f ./update.sh && wget "http://jp.cdn.rommhui.com/https/raw.githubusercontent.com/tansoz/NodeConf/master/update.sh" && chmod +x update.sh && ./update.sh~~
+~~rm -f ./update.sh && wget "https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/master/update.sh" && chmod +x update.sh && ./update.sh~~
 ```
 ## 取消Default 配置占用80端口命令
 ```
