@@ -12,9 +12,9 @@ fi
 
 rm -f ./proxy.conf
 
-id=$(wget -q -O - http://proxy.tansoz.com/proxy.php/https/github.com/tansoz/NodeConf/commit/master | sed -n '/property="og:url".*commit\/\([a-z0-9]*\)"/p' | sed 's/.*commit\/\([0-9a-z]*\).*/\1/')
+id=$(wget -q -O - https://proxy.tansoz.com/proxy.php/https://github.com/tansoz/NodeConf/commit/master | sed -n '/property="og:url".*commit\/\([a-z0-9]*\)"/p' | sed 's/.*commit\/\([0-9a-z]*\).*/\1/')
 
-wget "http://proxy.tansoz.com/proxy.php/https/raw.githubusercontent.com/tansoz/NodeConf/${id}/proxy.conf"
+wget "https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/${id}/proxy.conf"
 
 listen=""
 
