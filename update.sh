@@ -12,7 +12,7 @@ fi
 
 rm -f ./proxy.conf
 
-id=$(wget -q -O - http://baidu.liveblog365.com/proxy.php/https://github.com/tansoz/NodeConf/commit/master | sed -n '/property="og:url".*commit\/\([a-z0-9]*\)"/p' | sed 's/.*commit\/\([0-9a-z]*\).*/\1/')
+id=$(wget -q -O - http://service.rommhui.com/proxy.php/https://github.com/tansoz/NodeConf/commit/master | sed -n '/property="og:url".*commit\/\([a-z0-9]*\)"/p' | sed 's/.*commit\/\([0-9a-z]*\).*/\1/')
 
 wget "https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/${id}/proxy.conf"
 
