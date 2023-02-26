@@ -2,7 +2,9 @@
 
 sudo passwd root
 
-su root
+if [ `whoami` != "root" ];then
+  su root
+fi
 
 mkdir /root/.ssh/
 
