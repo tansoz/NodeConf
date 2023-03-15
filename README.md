@@ -7,7 +7,7 @@ curl https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/maste
 
 ## 安装xray
 ```
-bash <(curl -Ls https://rommhui.us-south.cf.appdomain.cloud/block/aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3RhbnNvei9Ob2RlQ29uZi9tYXN0ZXIvaW5zdGFsbC5zaA==)
+bash <(curl -Ls https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/master/install.sh)
 ```
 
 ## 测速
