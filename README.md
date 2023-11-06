@@ -4,6 +4,10 @@
 ```
 curl https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/master/install-code-server.sh | bash
 ```
+## 网络测速
+```
+bash <(curl -Ls https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/master/speedtest.sh)
+```
 
 ## 安装xray
 ```
