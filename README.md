@@ -6,7 +6,7 @@ curl https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/maste
 ```
 ## 网络测速
 ```
-bash <(curl -Ls https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/master/speedtest.sh)
+curl -Ls https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/master/speedtest.sh | bash
 ```
 
 ## 安装xray
