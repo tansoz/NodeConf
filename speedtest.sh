@@ -4,7 +4,7 @@ ip=$(curl -Ls https://speed.cloudflare.com/cdn-cgi/trace $1 | grep ip= | sed "s/
 
 echo IP: $ip
 
-download_speed=$(curl "https://speed.cloudflare.com/__down?bytes=50000000" -w "%{speed_download $1}" -s -o /dev/null | sed "s/\.0*//")
+download_speed=$(curl "https://speed.cloudflare.com/__down?bytes=50000000" $1 -w "%{speed_download}" -s -o /dev/null | sed "s/\.0*//")
 
 echo Download Speed: $(( $download_speed / 1024 / 1024)) MB/s
 
