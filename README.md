@@ -9,6 +9,16 @@ curl https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/maste
 curl -Ls https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/master/speedtest.sh | bash
 ```
 
+IPv4
+```
+curl -Ls https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/master/speedtest.sh | bash -s -- -4
+```
+
+IPv6
+```
+curl -Ls https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/master/speedtest.sh | bash -s -- -6
+```
+
 ## 安装xray
 ```
 bash <(curl -Ls https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/master/install.sh)
