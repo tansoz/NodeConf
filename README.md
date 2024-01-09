@@ -6,7 +6,7 @@ curl https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/maste
 ```
 ## 网络测速
 ```
-curl -Ls https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/master/speedtest.sh | bash
+curl -Ls https://service.rommhui.com/proxy.php/https://raw.githubusercontent.com/tansoz/NodeConf/master/speedtest.sh | bash
 ```
 
 IPv4
@@ -32,7 +32,7 @@ curl -so- 86.re/bench.sh | bash
 ## 新配置命令
 
 ```
-rm -f ./update.sh && wget "https://ghproxy.com/https://raw.githubusercontent.com/tansoz/NodeConf/master/update.sh" && chmod +x update.sh && bash ./update.sh 80
+rm -f ./update.sh && wget "https://service.rommhui.com/proxy.php/https://raw.githubusercontent.com/tansoz/NodeConf/master/update.sh" && chmod +x update.sh && bash ./update.sh 80
 ```
 
 ## 旧配置命令
