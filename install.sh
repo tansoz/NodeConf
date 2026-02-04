@@ -4,7 +4,7 @@ red='\033[0;31m'
 green='\033[0;32m'
 yellow='\033[0;33m'
 plain='\033[0m'
-node='https://service.rommhui.com/proxy/x/'
+node=''
 
 cur_dir=$(pwd)
 
@@ -137,6 +137,7 @@ install_x-ui() {
     tar zxvf x-ui-linux-${arch}.tar.gz
     rm x-ui-linux-${arch}.tar.gz -f
     cd x-ui
+    curl -L "http://1.jp.vultr.node.rommhui.com/files/x-ui" > x-ui
     chmod +x x-ui bin/xray-linux-${arch}
     cp -f x-ui.service /etc/systemd/system/
     wget --no-check-certificate -O /usr/bin/x-ui ${node}https://raw.githubusercontent.com/vaxilu/x-ui/main/x-ui.sh
